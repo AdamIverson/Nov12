@@ -5,9 +5,9 @@ const HomeScreen = ({ navigation }) => {
 
   return (
     <Button
-      title="go to jane's profile"
+      title="about"
       onPress={() => 
-        navigation.navigate('Profile')
+        navigation.navigate('About')
       }/>
   )
 }

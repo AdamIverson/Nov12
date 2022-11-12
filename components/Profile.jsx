@@ -1,10 +1,10 @@
 import React from "react";
 import { Button, Text, View } from 'react-native';
 
-const Profile = ({ navigation, route }) => {
+const About = ({ navigation, route }) => {
   return (
-    <Text>This is {route.params}'s profile</Text>
+    <Text>this is the about page welcome to it friend</Text>
   )
 };
 
-export default Profile;
+export default About;

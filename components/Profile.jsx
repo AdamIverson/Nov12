@@ -3,7 +3,7 @@ import { Button, Text, View } from 'react-native';
 
 const Profile = ({ navigation, route }) => {
   return (
-    <Text>This is TODD's profile</Text>
+    <Text>This is {route.params.name}'s profile</Text>
   )
 };
 

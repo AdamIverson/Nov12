@@ -37,7 +37,13 @@ const App = Node = () => {
           navigation.navigate('Profile')
         }/>
     )
-  }
+  };
+
+  const Profile = ({ navigation, route }) => {
+    return (
+      <Text>This is {route.params}'s profile</Text>
+    )
+  };
 
   return (
     <NavigationContainer>
@@ -45,9 +51,9 @@ const App = Node = () => {
       <Stack.Screen
           name="Home"
           component={HomeScreen}
-          // options={{ title: 'Welcome' }}
+          options={{ title: 'Welcome' }}
         />
-        {/* <Stack.Screen name="Profile" component={Profile()}/> */}
+        <Stack.Screen name="Profile" component={Profile}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

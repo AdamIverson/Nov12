@@ -1,49 +1,13 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-// import HomeScreen from './components/HomeScreen';
-// import Profile from './components/Profile';
+import HomeScreen from './components/HomeScreen';
+import Profile from './components/Profile';
 
-import type {Node} from 'react';
-import {
-  Button,
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
 
 const Stack = createNativeStackNavigator();
 
-const App = Node = () => {
-
-  const HomeScreen = ({ navigation }) => {
-
-    return (
-      <Button
-        title="go to jane's profile"
-        onPress={() => 
-          navigation.navigate('Profile')
-        }/>
-    )
-  };
-
-  const Profile = ({ navigation, route }) => {
-    return (
-      <Text>This is {route.params}'s profile</Text>
-    )
-  };
+const App = () => {
 
   return (
     <NavigationContainer>

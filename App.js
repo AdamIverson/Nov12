@@ -16,7 +16,7 @@ const App = () => {
           component={HomeScreen}
           options={{ title: 'Welcome' }}
         />
-        <Stack.Screen name="About" component={About}/>
+        <Stack.Screen name="About" component={About} options={{ title: 'aboot'}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

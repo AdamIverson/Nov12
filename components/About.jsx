@@ -3,7 +3,7 @@ import { Button, Text, View } from 'react-native';
 
 const About = ({ navigation, route }) => {
   return (
-    <Text>this is the about page welcome to it friend</Text>
+    <Text>this is the about page welcome to it champ</Text>
   )
 };
 
